@@ -15,10 +15,8 @@ FSJS project 2 - List Filter and Pagination
    going to create. A good general rule of thumb is if the variable
    will only be used inside of a function, then it can be locally
    scoped to that function.
-
    ***/
-   var list = i
-   var page = 10
+
 
    /***
 
@@ -35,21 +33,15 @@ FSJS project 2 - List Filter and Pagination
        that will be passed into the parens later when you call or
        "invoke" the function
 
-
-
-const showPage = (list, page) => {
-  for ( var i >= 0 && i <= 10, list.length += i ) {
-        page.show();
-  }
-
-}
 ***/
 const showPage = (list, page) => {
-  for ( var i = 0 && i <= 10 i++ ) {
+  var list = i;
+  var page = 10;
+  for ( var i = 0; i <= 10; i++ ) {
         page.show();
   }
-
 }
+
 
 
 /*
