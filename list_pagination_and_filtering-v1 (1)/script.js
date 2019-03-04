@@ -35,10 +35,17 @@ FSJS project 2 - List Filter and Pagination
        that will be passed into the parens later when you call or
        "invoke" the function
 
-***/
+
 
 const showPage = (list, page) => {
   for ( var i >= 0 && i <= 10, list.length += i ) {
+        page.show();
+  }
+
+}
+***/
+const showPage = (list, page) => {
+  for ( var i = 0 && i <= 10 i++ ) {
         page.show();
   }
 
