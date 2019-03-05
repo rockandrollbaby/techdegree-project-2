@@ -15,10 +15,8 @@ FSJS project 2 - List Filter and Pagination
    going to create. A good general rule of thumb is if the variable
    will only be used inside of a function, then it can be locally
    scoped to that function.
-
    ***/
-   var list = i
-   var page = 10
+
 
    /***
 
@@ -37,12 +35,17 @@ FSJS project 2 - List Filter and Pagination
 
 ***/
 
+const totalNumber = document.querySelectorAll("li");
+
+var numberPages = totalNumber/10
+
 const showPage = (list, page) => {
-  for ( var i >= 0 && i <= 10, list.length += i ) {
+
+  for ( var i = 0; i < page; i++ ) {
         page.show();
   }
-
 }
+
 
 
 /*
@@ -50,12 +53,15 @@ Loop over items in the list parameter
 -- If the index of a list item is >= the index of the first item, that should be shown on the page
 -- && the list item index is <= the index of the last item, that should be shown on the page, show it
 */
-}
+
 
 /***
    Create the `appendPageLinks function` to generate, append, and add
    functionality to the pagination buttons.
-
-});
 ***/
+
+const appendPageLinks = (list) => {
+  document.createElement
+
+}
 // Remember to delete the comments that came with this file, and replace them with your own code comments.
