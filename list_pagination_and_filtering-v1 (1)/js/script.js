@@ -33,22 +33,25 @@ FSJS project 2 - List Filter and Pagination
        that will be passed into the parens later when you call or
        "invoke" the function
 
+
+
+const totalPages = document.querySelectorAll("li");
+
+var numberPages = totalPages/10
+
+function showPage(list,page) {
+  console.log(list,page);
+}
 ***/
-
-const totalNumber = document.querySelectorAll("li");
-
-var numberPages = totalNumber/10
+const list = document.querySelectorAll("li");
+const page = 54/10;
 
 const showPage = (list,page) => {
 
   for ( var i = 0; i < page; i++ ) {
-        page.show();
   }
 }
   showPage (list,page);
-
-
-
 
 /*
 Loop over items in the list parameter
