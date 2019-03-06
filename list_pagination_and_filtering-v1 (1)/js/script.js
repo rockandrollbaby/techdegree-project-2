@@ -39,12 +39,14 @@ const totalNumber = document.querySelectorAll("li");
 
 var numberPages = totalNumber/10
 
-const showPage = (list, page) => {
+const showPage = (list,page) => {
 
   for ( var i = 0; i < page; i++ ) {
         page.show();
   }
 }
+  showPage (list,page);
+
 
 
 
